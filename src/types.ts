@@ -23,8 +23,10 @@ export interface ICountry {
   exchange_rate: number | null;
   estimated_gdp: number | null;
   flag_url: string;
-  last_refreshed_at: string;
+  last_refreshed_at: Date;
 }
+
+export type NewCountry = Omit<ICountry, 'id'>;
 
 export interface IStatus {
   total_countries: number;

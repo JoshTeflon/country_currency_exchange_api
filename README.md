@@ -47,7 +47,7 @@ pnpm install
 Create a .env file in the root directory:
 ```bash
 PORT=3000
-DATABASE_URL="mysql://user:password@localhost:3306/country_db"
+DATABASE_URL="mysql://user:password@localhost:3306/country_currency_db"
 EXCHANGE_API_URL="https://open.er-api.com/v6/latest/USD"
 COUNTRY_API_URL="https://restcountries.com/v2/all?fields=name,capital,region,population,flag,currencies"
 ```
@@ -71,3 +71,21 @@ pnpm build && pnpm start
 
 Server will be available at:
 👉 http://localhost:3000
+
+---
+
+## 📚 Key Dependencies**
+
+Node.js + Express – RESTful API framework
+
+ts-node – Dev runtime
+
+TypeScript – Strongly typed JS
+
+MySQL (via Prisma) – Database layer
+
+Axios – For external API calls
+
+dotenv – For environment configuration
+
+sharp or node-canvas – For image generation
